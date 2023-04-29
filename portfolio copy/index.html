@@ -1,0 +1,293 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></script>
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrine del Rosario</title>
+    <link rel="icon" href="./logo-ideas/logo-icon.png" sizes="32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Belgrano&family=Contrail+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./p-index.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+      <article>
+              <h1>
+                  Katrine Del Rosario
+              </h1>
+      
+          <figure>
+              <img alt="katrinedelrosario" src="./vid/My project copy 2.png" />
+          </figure>
+      </article>
+  </header>
+    <div class="fixed-bg"></div>
+</style>
+
+    <!-- LOGO -->
+        <section class="nav-logo">
+            <a href="#top" class="brand-logo">
+            <img alt="clear-logo" src="./logo-ideas/logo-clear-white.png">
+          </a>
+          </nav>
+          <div style="height: 100%;"></div>
+        </section>
+
+    <!-- NAVBAR -->
+    <nav class="nav-container">
+        <div class="nav">
+            <a id="navabout" href="#about">About</a>
+            <a id="navskills" href="#skills">Skills</a>
+            <a id="navpersonalprojects" href="#personalprojects">Personal Projects</a>
+            <a id="navservices" href="#services">Services</a>
+            <a id="navcontactinfo" href="#contactinfo">Contact Info</a>
+    </nav>
+    <!-- CONTENT -->
+    <section id="content">
+        <div id="about">
+            <h2>About</h2>
+			<p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button onclick="">Learn More</button>
+        </div>		
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="skillsboxes">
+                <div class="skl-box">
+                  <h3>box1</h3>
+                  <p>text text text</p>
+                  <ul>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                  </ul>
+                </div>
+                <div class="skl-box">
+                  <h3>box2</h3>
+                  <p>text text text</p>
+                  <ul>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                    <li>skills</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="personalprojects">
+            <h2>Personal Projects</h2>
+            <div class="personalprojectsboxes">
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+            </div>
+            <div class="personalprojectsboxes">
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+              <div class="pp-box">
+              <p>some text</p>
+              </div>
+            </div>
+			<!-- <button onclick="">Learn More</button> -->
+
+        </div>
+        <div id="services">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button onclick="">Learn More</button>
+        </div>
+        <div id="contactinfo">
+            <h2>Contact Info</h2>
+            <div class="ci-box">
+              <p>some text</p>
+            </div>
+            <div class="ci-buttons">
+              <button onclick="">so-me app</button>
+              <button onclick="">so-me app</button>
+              <button onclick="">so-me app</button>
+              <button onclick="">so-me app</button>
+              <button onclick="">so-me app</button>
+            </div>
+          </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        $(document).ready(function() {
+       $(window).on("scroll", function() {
+         console.log($(this).scrollTop())
+       // Hvor mange pixels der skal scrolles før billedet ændre sig
+         if($(this).scrollTop() >= 525){
+           // Nyt billede
+           $(".brand-logo img").attr("src","./logo-ideas/logo-filled.png");
+         } else {
+           // Det første billede
+           $(".brand-logo img").attr("src","./logo-ideas/logo-clear-white.png");
+         }
+       })
+    })
+      </script>
+      <script>
+        $(document).ready(function() {
+        $(window).on("scroll", function() {
+         console.log($(this).scrollTop())
+       // Hvor mange pixels der skal scrolles før billedet ændre sig
+         if($(this).scrollTop() >= 435){
+
+          $("#navabout").css('color', '#eb3464');
+      } else {
+        //Andet div
+          $("#navabout").css('color', '#ebe8eb');
+      }
+    })
+  })
+      </script>
+
+  <script>
+  $(document).ready(function() {
+  $(window).on("scroll", function() {
+   console.log($(this).scrollTop())
+ // Hvor mange pixels der skal scrolles før billedet ændre sig
+   if($(this).scrollTop() >= 402){
+
+    $("#navskills").css('color', '#eb3464');
+} else {
+  //Andet div
+    $("#navskills").css('color', '#ebe8eb');
+}
+})
+})
+</script>
+
+<script>
+  $(document).ready(function() {
+  $(window).on("scroll", function() {
+   console.log($(this).scrollTop())
+ // Hvor mange pixels der skal scrolles før billedet ændre sig
+   if($(this).scrollTop() >= 360){
+
+    $("#navpersonalprojects").css('color', '#eb3464');
+} else {
+  //Andet div
+    $("#navpersonalprojects").css('color', '#fff');
+}
+})
+})
+</script>
+
+<script>
+  $(document).ready(function() {
+  $(window).on("scroll", function() {
+   console.log($(this).scrollTop())
+ // Hvor mange pixels der skal scrolles før billedet ændre sig
+   if($(this).scrollTop() >= 300){
+
+    $("#navservices").css('color', '#eb3464');
+} else {
+  //Andet div
+    $("#navservices").css('color', '#fff');
+}
+})
+})
+</script>
+
+<script>
+  $(document).ready(function() {
+  $(window).on("scroll", function() {
+   console.log($(this).scrollTop())
+ // Hvor mange pixels der skal scrolles før billedet ændre sig
+   if($(this).scrollTop() >= 255){
+
+    $("#navcontactinfo").css('color', '#eb3464');
+} else {
+  //Andet div
+    $("#navcontactinfo").css('color', '#fff');
+}
+})
+})
+</script>
+
+<script>
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+<script>
+  const article = document.querySelector('article');
+
+// to compute the center of the card retrieve its coordinates and dimensions
+const {
+x, y, width, height,
+} = article.getBoundingClientRect();
+const cx = x + width / 2;
+const cy = y + height / 2;
+
+// following the mousemove event compute the distance betwen the cursor and the center of the card
+function handleMove(e) {
+const { pageX, pageY } = e;
+
+// ! consider the relative distance in the [-1, 1] range
+const dx = (cx - pageX) / (width / 2);
+const dy = (cy - pageY) / (height / 2);
+
+// rotate the card around the x axis, according to the vertical distance, and around the y acis, according to the horizontal gap 
+this.style.transform = `rotateX(${17 * dy * -1}deg) rotateY(${17 * dx * -1}deg)`;
+}
+
+// following the mouseout event reset the transform property
+function handleOut() {
+this.style.transform = 'initial';
+}
+
+article.addEventListener('mousemove', handleMove);
+article.addEventListener('mouseout', handleOut);
+
+
+</script>
+
+
+</body>
+</html>
